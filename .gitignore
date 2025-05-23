@@ -1,7 +1,7 @@
 # Angular
 /dist/
-/node_modules/
-/.angular/cache
+frontend/node_modules/
+frontend/.angular/cache
 
 # Python
 __pycache__/

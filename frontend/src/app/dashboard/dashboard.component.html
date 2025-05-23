@@ -1,0 +1,9 @@
+<div class="connection-status" [class.connected]="(connectionStatus | async)"
+    [class.disconnected]="!(connectionStatus | async)">
+    Status: {{ (connectionStatus | async) ? 'Connected' : 'Disconnected' }}
+</div>
+
+<div class="data-container" *ngIf="holdingsData">
+    <h2>Real-time Holdings Data</h2>
+    <pre>{{ holdingsData | json }}</pre>
+</div>
