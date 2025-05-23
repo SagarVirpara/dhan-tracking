@@ -9,7 +9,7 @@ export class WebSocketService {
   private socket$: WebSocketSubject<any> = this.getNewWebSocket();
   private connectionStatus$ = new Subject<boolean>();
   private readonly RECONNECT_INTERVAL = 5000;
-  private readonly WS_ENDPOINT = 'ws://localhost:8000/ws';
+  private readonly WS_ENDPOINT = 'ws://dhan-tracking-py.vercel.app/ws';
 
   constructor() {
     this.connect();
