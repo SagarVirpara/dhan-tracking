@@ -1,24 +1,9 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "backend/main.py",
-        "use": "@vercel/python"
-      }
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
     ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "backend/main.py"
-      },
-      {
-        "src": "/(.*\\..*)",
-        "dest": "frontend/dist/frontend/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "frontend/dist/frontend/index.html"
-      }
-    ]
-  }
-  
+    "cleanUrls": true
+}
