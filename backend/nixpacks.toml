@@ -1,0 +1,4 @@
+[build]
+builder = "python"
+install_commands = ["pip install -r requirements.txt"]
+start_commands = ["uvicorn main:app --host 0.0.0.0 --port $PORT"]
