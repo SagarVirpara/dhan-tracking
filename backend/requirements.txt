@@ -1,0 +1,21 @@
+# Core requirements
+fastapi
+uvicorn
+python-multipart
+websockets
+
+# DhanHQ SDK and dependencies
+dhanhq
+requests
+
+# Environment management
+python-dotenv
+
+# Date/time handling
+pytz
+
+# Async utilities
+aiohttp
+
+# JSON handling
+orjson
