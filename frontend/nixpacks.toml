@@ -1,5 +1,0 @@
-[build]
-builder = "node"
-install_commands = ["npm install"]
-build_commands = ["npm run build"]
-start_commands = ["npm start"]
